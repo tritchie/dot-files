@@ -62,7 +62,7 @@ function precmd {
   local rvm="❖ `rvm-prompt`"
 
   local user_at_host
-  if [[ "$USER" != "bjeanes" ]]; then
+  if [[ "$USER" =~ /ritchie/ ]]; then
     user_at_host="$USER"
 
     if [[ "$user" == "root" ]] then
